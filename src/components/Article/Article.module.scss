@@ -1,0 +1,57 @@
+.article {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	grid-template-areas:
+	'price . logo' 
+	'line line line';
+	align-items: center;
+
+
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.title {
+	display: block;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: #A0B0B9;
+}
+
+.value {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	color: #4A4A4A;
+}
+
+.price {
+	grid-area: price;
+
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+	color: #2196F3;
+}
+
+.logo {
+	grid-area: logo;
+
+	justify-self: end;
+}
+
+.line {
+	grid-area: line;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	margin-bottom: 10px;
+}

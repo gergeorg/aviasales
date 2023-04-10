@@ -1,0 +1,16 @@
+.sort {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.left {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
