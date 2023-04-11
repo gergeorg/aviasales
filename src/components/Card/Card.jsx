@@ -1,32 +1,31 @@
-import React from 'react';
 import cn from 'classnames';
 
 import logo from '../../assets/S7Logo.png';
 
-import style from './Article.module.scss';
+import style from './Card.module.scss';
 
-export const Article = () => {
+export const Card = () => {
   return (
-    <article className={style.article}>
+    <li className={style.card}>
       <span className={style.price}>13 400 Р </span>
       <img className={style.logo} src={logo} alt='логотип авиакомпании' />
 
-      <div className={style.line}>
-        <div className={style.firstInfo}>
+      <ul className={style.line}>
+        <li className={style.firstInfo}>
           <span className={style.title}>MOW – HKT</span>
           <span className={style.value}>10:45 – 08:00</span>
-        </div>
+        </li>
 
-        <div className={style.secondInfo}>
+        <li className={style.secondInfo}>
           <span className={style.title}>В пути</span>
           <span className={style.value}>21ч 15м</span>
-        </div>
+        </li>
 
-        <div className={style.thirdInfo}>
+        <li className={style.thirdInfo}>
           <span className={style.title}>1 пересадка</span>
           <span className={style.value}>HKG, JNB</span>
-        </div>
-      </div>
-    </article>
+        </li>
+      </ul>
+    </li>
   );
 };

@@ -1,4 +1,3 @@
-import React from 'react';
 import cn from 'classnames';
 
 import style from './Checkbox.module.scss';

@@ -8,3 +8,21 @@
 .bigButton {
 	border-radius: 5px;
 }
+
+@media screen and (max-width: 762px) {
+	.main {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+				'filter'
+				'main';
+	}
+
+	.filter {
+		grid-area: filter;
+	}
+
+	.main {
+		grid-area: main;
+	}
+	
+}

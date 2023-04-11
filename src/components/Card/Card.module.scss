@@ -1,4 +1,4 @@
-.article {
+.card {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 10px;
@@ -53,5 +53,35 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
+}
+
+.line:not(:last-child) {
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+	.card {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'price'
+			'logo'
+			'line';
+		justify-items: center;
+	}
+
+	.price {
+		margin-bottom: 10px;
+	}
+
+	.logo {
+		justify-self: center;
+	}
+
+	.line {
+		gap: 10px;
+	}
+
+	.title {
+		font-size: 11px;
+	}
 }

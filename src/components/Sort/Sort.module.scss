@@ -14,3 +14,14 @@
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
+
+@media screen and (max-width: 576px) {
+	.sort {
+		grid-template-columns:1fr;
+	}
+
+	.left, .right, .center {
+		border-radius: 5px;
+		margin-bottom: 5px;
+	}
+}
